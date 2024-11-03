@@ -1,0 +1,36 @@
+{
+ operation : SELECT,
+ fields : [  ],
+ from item : table,
+ condition : {
+  logical : OR,
+  clauses : [
+   {
+    logical : AND,
+    clauses : [
+     True,
+     {
+      logical : OR,
+      clauses : [
+       {
+        expression : {
+         field : x,
+         operation : +,
+         value : 1
+        },
+        comparation : <,
+        field : y
+       },
+       False
+      ]
+     }
+    ]
+   },
+   {
+    value : A,
+    comparation : =,
+    value : A
+   }
+  ]
+ }
+}

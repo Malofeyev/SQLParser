@@ -1,0 +1,28 @@
+{
+ operation : SELECT,
+ fields : [
+  {
+   expression : 1,
+   alias : Two
+  },
+  a,
+  {
+   expression : {
+    field : b,
+    operation : +,
+    field : c
+   },
+   operation : +,
+   value : 1
+  },
+  {
+   expression : c,
+   alias : D
+  },
+  {
+   operation : all columns
+  }
+ ],
+ from item : table,
+ condition : True
+}

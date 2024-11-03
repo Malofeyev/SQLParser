@@ -1,0 +1,6 @@
+{
+ operation : SELECT,
+ fields : [ a, b, c ],
+ from item : table,
+ condition : True
+}
